@@ -106,7 +106,7 @@ class LLMConfig:
                     base_url=base_url,
                 )
         else:
-            return init_chat_model(model_string)
+            return init_chat_model(model_string,temperature=0)
 
     @staticmethod
     def get_model_info(provider: Optional[str] = None) -> dict:
